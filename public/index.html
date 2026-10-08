@@ -1,0 +1,1161 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="monomotiv — Minimalist monochrome & dark aesthetic car rental experience. Pure Indian high-caliber vehicle registry.">
+  <meta name="theme-color" content="#080808">
+  <title>monomotiv — High-Caliber Indian Vehicular Registry</title>
+
+  <!-- Typography: Plus Jakarta Sans & JetBrains Mono for razor-sharp tabular precision -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-obsidian text-offwhite antialiased selection:bg-white selection:text-black">
+
+  <!-- Ambient Obsidian Background Noise & Geometric Grid -->
+  <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden" aria-hidden="true">
+    <div class="ambient-glow ambient-glow-top"></div>
+    <div class="ambient-glow ambient-glow-center"></div>
+    <div class="ambient-grid"></div>
+  </div>
+
+  <!-- Main Content Wrap (Top header removed per user request for pure focus) -->
+  <main class="relative z-10 pt-8 sm:pt-12">
+
+    <!-- ==========================================================================
+         PAGE 1: FLEET REGISTRY VIEW (MAIN SHOWCASE & KINETIC HERO)
+         ========================================================================== -->
+    <div id="view-fleet" class="app-view active">
+
+      <!-- 1. HERO SECTION & 2-LAYER KINETIC SCROLL ANIMATION -->
+      <section id="hero"
+        class="relative min-h-[92vh] sm:min-h-[95vh] flex flex-col justify-center px-5 sm:px-8 lg:px-16 overflow-hidden border-b border-subtle"
+        id="manifesto-anchor">
+
+        <!-- Technical Telemetry Coordinates -->
+        <div
+          class="absolute top-10 right-8 text-[11px] font-mono text-muted/60 hidden md:block select-none text-right leading-relaxed"
+          aria-hidden="true">
+          <div>REGISTRY PROTOCOL: 0xIND-SPEC</div>
+          <div>COORDINATES: 19°04'33.2&quot;N 72°52'39.4&quot;E</div>
+          <div>DISPATCH: BOM / DEL / BLR TERMINALS</div>
+          <div class="text-offwhite/50 mt-1">BHARAT ARCHIVE // 2026.10</div>
+        </div>
+
+        <!-- Hero Content Container -->
+        <div class="max-w-6xl w-full mx-auto my-auto py-16 sm:py-24">
+
+          <!-- Pre-Header Status Chip & Pilot Gateway Link -->
+          <div class="flex items-center justify-between gap-4 mb-12 sm:mb-16 flex-wrap">
+            <div
+              class="inline-flex items-center gap-2.5 px-3 py-1 rounded bg-surface border border-subtle text-xs font-mono text-muted tracking-wider">
+              <span class="w-2 h-2 rounded-full dot-circle dot-circle bg-white shadow-glow"></span>
+              <span class="text-offwhite uppercase">Indian High-Caliber Fleet</span>
+              <span class="text-muted/60">/</span>
+              <span>Zero Decorative Noise</span>
+            </div>
+
+            <button type="button" id="open-login-btn"
+              class="inline-flex items-center gap-2 px-3 py-1 rounded bg-surface border border-subtle hover:border-white text-xs font-mono text-muted hover:text-white transition-all cursor-pointer">
+              <span class="w-1.5 h-1.5 rounded-full dot-circle bg-emerald-400"></span>
+              <span id="pilot-session-status">Pilot Terminal Access →</span>
+            </button>
+          </div>
+
+          <!-- HERO KINETIC TYPOGRAPHY CONTAINER (2 Layers: Solid Core & Ghost Shadow) -->
+          <div class="hero-kinetic-stage relative select-none my-10 sm:my-16 lg:my-20"
+            aria-label="monomotiv kinetic typography display">
+
+            <!-- Layer 2: Ghost / Faded Shadow (Smooth horizontal drift on scroll) -->
+            <div id="hero-layer-ghost" class="kinetic-text kinetic-layer-ghost" aria-hidden="true">
+              monomotiv
+            </div>
+
+            <!-- Layer 1: Solid Core Base Layer (#FFFFFF, anchored with subtle micro-parallax) -->
+            <h1 id="hero-layer-solid" class="kinetic-text kinetic-layer-solid">
+              monomotiv
+            </h1>
+
+          </div>
+
+          <!-- Manifesto Subheading -->
+          <div class="mt-12 sm:mt-16 lg:mt-20 grid grid-cols-1 md:grid-cols-12 gap-8 items-end">
+            <div class="md:col-span-8">
+              <p class="text-lg sm:text-2xl text-offwhite font-light tracking-tight leading-relaxed max-w-2xl">
+                Precision Indian machinery calibrated for demanding terrain, rapid highway corridors, and executive
+                transits. Stripped of superficial marketing. Pure specifications, transparent rupee valuations, and
+                seamless on-demand dispatch.
+              </p>
+              
+            </div>
+
+            <!-- Quick Telemetry Stats Grid -->
+            <div
+              class="md:col-span-4 border-t md:border-t-0 md:border-l border-subtle pt-6 md:pt-0 md:pl-8 space-y-4 font-mono">
+              <div class="flex justify-between items-baseline border-b border-subtle/50 pb-2.5">
+                <span class="text-xs text-muted uppercase">Fleet Origin</span>
+                <span class="text-sm font-bold text-offwhite tabular-nums">100% INDIAN SPEC</span>
+              </div>
+              <div class="flex justify-between items-baseline border-b border-subtle/50 pb-2.5">
+                <span class="text-xs text-muted uppercase">Base Tariff From</span>
+                <span class="text-sm font-bold text-white tabular-nums">₹2,800 / DAY</span>
+              </div>
+              <div class="flex justify-between items-baseline border-b border-subtle/50 pb-2.5">
+                <span class="text-xs text-muted uppercase">Peak Torque</span>
+                <span class="text-sm font-bold text-white tabular-nums">400 NM</span>
+              </div>
+              <div class="flex justify-between items-baseline">
+                <span class="text-xs text-muted uppercase">Cancellation Fee</span>
+                <span class="text-sm font-bold text-emerald-400 tabular-nums">₹0.00 (24H)</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        
+
+      </section>
+
+      <!-- 2. FLEET SHOWCASE SECTION (SPEC-ONLY, NO IMAGES, SEGREGATED BY CATEGORY) -->
+      <section id="fleet-section" class="pt-32 pb-24 sm:pt-40 sm:pb-32 px-5 sm:px-8 lg:px-16 border-b border-subtle max-w-7xl mx-auto">
+
+        <!-- Section Header & Filter Controls -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-14">
+          <div>
+            <div
+              class="inline-flex items-center gap-2 px-3 py-1 rounded bg-surface border border-subtle text-[11px] font-mono text-muted uppercase tracking-wider mb-3">
+              <span>INDIAN SPECIMEN REGISTRY</span>
+              <span class="text-muted/60">•</span>
+              <span class="text-offwhite">12 SPECIMENS DEPLOYED</span>
+            </div>
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white">
+              Precision Indian Machines.
+            </h2>
+            <p class="text-muted text-sm sm:text-base mt-2 max-w-xl">
+              Pure technical data sheets. Select any vehicle to proceed directly into its dedicated booking &amp;
+              protection configurator.
+            </p>
+          </div>
+
+          <!-- Category Filter Pills: All, Economy, SUV, Luxury, EV -->
+          <div
+            class="flex flex-wrap items-center gap-2 p-1.5 rounded bg-surface border border-subtle self-start md:self-auto"
+            role="tablist" aria-label="Fleet category filters">
+            <button class="filter-pill active" data-category="all" role="tab" aria-selected="true">
+              All <span class="pill-count" id="count-all">12</span>
+            </button>
+            <button class="filter-pill" data-category="economy" role="tab" aria-selected="false">
+              Economy <span class="pill-count" id="count-economy">3</span>
+            </button>
+            <button class="filter-pill" data-category="suv" role="tab" aria-selected="false">
+              SUV <span class="pill-count" id="count-suv">3</span>
+            </button>
+            <button class="filter-pill" data-category="luxury" role="tab" aria-selected="false">
+              Luxury <span class="pill-count" id="count-luxury">3</span>
+            </button>
+            <button class="filter-pill" data-category="ev" role="tab" aria-selected="false">
+              EV <span class="pill-count" id="count-ev">3</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Fleet Grid Showcase (Rendered Dynamically - No Images, Spec Cards in ₹) -->
+        <div id="fleet-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-6 sm:gap-8">
+          <!-- Rendered dynamically by JavaScript -->
+        </div>
+
+        <!-- Empty Filter Feedback -->
+        <div id="fleet-empty-state" class="hidden py-20 text-center border border-subtle rounded-2xl bg-surface">
+          <p class="text-muted font-mono text-sm uppercase tracking-wider">No vehicles match current category filter.
+          </p>
+          <button id="reset-filter-btn"
+            class="mt-4 px-5 py-2 rounded border border-subtle text-xs font-mono uppercase text-offwhite hover:border-white">
+            Reset Filter to All
+          </button>
+        </div>
+
+      </section>
+
+      
+
+      <!-- Global Footer -->
+      <footer class="py-16 px-5 sm:px-8 lg:px-16 border-t border-subtle bg-obsidian text-muted font-mono text-xs">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
+          <div>
+            <div class="flex items-center gap-2 mb-2">
+              <span class="w-2 h-2 rounded-full dot-circle dot-circle bg-white"></span>
+              <span class="text-sm font-bold text-white lowercase font-sans">monomotiv</span>
+              <span class="text-[10px] text-muted/60 uppercase">/ BHARAT ARCHIVE</span>
+            </div>
+            <p class="text-[11px] text-muted max-w-md">
+              Curated Indian vehicular collective. Crafted with obsidian discipline, pure telemetry, and zero extraneous
+              decorative noise.
+            </p>
+          </div>
+
+          <div class="flex flex-wrap gap-6 text-[11px] uppercase tracking-wider">
+            <a href="#hero" class="hover:text-white transition-colors">Manifesto</a>
+            <a href="#fleet-section" class="hover:text-white transition-colors">Fleet Registry</a>
+            <a href="#login" class="hover:text-white transition-colors">Pilot Login</a>
+            
+            <button id="footer-reset-all"
+              class="hover:text-white transition-colors text-offwhite/80 underline underline-offset-4 bg-transparent border-0 cursor-pointer">
+              Reset Registry
+            </button>
+          </div>
+
+          <div class="text-[10px] text-muted/60">
+            © 2026 MONOMOTIV COLLECTIVE. ALL RIGHTS RESERVED.
+          </div>
+        </div>
+      </footer>
+
+      
+
+    </div>
+
+    <!-- ==========================================================================
+         PAGE 2: DEDICATED RESERVATION & PROTECTION CONFIGURATOR PAGE
+         Full native window scroll — NO trapped flex/modal clipping!
+         ========================================================================== -->
+    <div id="view-configurator" class="app-view hidden">
+      <div class="max-w-6xl mx-auto px-5 sm:px-8 py-10 sm:py-16">
+
+        <!-- Breadcrumb / Back Bar -->
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 border-b border-subtle mb-10">
+          <button type="button"
+            class="back-to-fleet-btn inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-muted hover:text-white transition-colors bg-transparent border-0 cursor-pointer">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18">
+              </path>
+            </svg>
+            <span>Back to Fleet Registry</span>
+          </button>
+
+          <div class="flex items-center gap-2 font-mono text-xs text-muted">
+            <span class="w-2 h-2 rounded-full dot-circle dot-circle bg-emerald-400"></span>
+            <span>STEP 02 OF 03 // DISPATCH ARCHITECTURE</span>
+          </div>
+        </div>
+
+        <!-- Page 2 Heading -->
+        <div class="mb-10">
+          <span class="text-[11px] font-mono uppercase tracking-widest text-muted block mb-2">RESERVATION
+            CONFIGURATOR</span>
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight">Configure Your
+            Deployment.</h2>
+          <p class="text-muted text-sm sm:text-base mt-2 max-w-xl">
+            Select your rental dates, customize liability protection tiers, and choose per-diem operational extras.
+          </p>
+        </div>
+
+        <!-- 1. Active Selected Vehicle Spec Summary Banner -->
+        <div class="p-6 sm:p-8 rounded-2xl border border-subtle bg-surface mb-10 shadow-xl">
+          <div
+            class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pb-6 border-b border-subtle">
+            <div>
+              <div class="flex items-center gap-2 mb-1.5 font-mono text-xs text-muted">
+                <span id="engine-car-make" class="uppercase font-bold tracking-widest text-offwhite">MAHINDRA</span>
+                <span class="text-muted/50">•</span>
+                <span id="engine-car-id" class="text-[11px] text-muted">SPEC.04 // #MNM-THAR</span>
+                <span class="text-muted/50">•</span>
+                <span id="engine-car-category"
+                  class="px-2 py-0.5 rounded text-[9px] font-mono uppercase bg-white/10 text-offwhite border border-white/20">SUV</span>
+              </div>
+              <h3 id="engine-car-name" class="text-2xl sm:text-3xl font-extrabold text-white">Thar Roxx 4x4 (Obsidian
+                Spec)</h3>
+            </div>
+
+            <div class="flex items-center gap-4">
+              <div class="text-right">
+                <span class="text-3xl font-bold text-white font-mono tabular-nums" id="engine-car-rate">₹6,500</span>
+                <span class="text-xs text-muted font-mono"> / day</span>
+              </div>
+              <button type="button"
+                class="back-to-fleet-btn px-4 py-2 rounded border border-subtle bg-surface-subtle text-xs font-mono uppercase text-offwhite hover:border-white/50 transition-colors cursor-pointer">
+                Change Vehicle
+              </button>
+            </div>
+          </div>
+
+          <!-- Spec Highlights Grid -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-6 font-mono text-xs">
+            <div class="p-3.5 rounded-xl bg-surface-subtle border border-subtle">
+              <span class="text-[10px] text-muted uppercase block">CHASSIS COLOUR</span>
+              <div class="flex items-center gap-2 mt-1">
+                <span id="engine-car-colour-swatch" class="w-3.5 h-3.5 rounded-full dot-circle dot-circle border border-white/20"
+                  style="background-color: #0A0A0C;"></span>
+                <span id="engine-car-colour" class="text-offwhite font-bold truncate">Obsidian Matte</span>
+              </div>
+            </div>
+            <div class="p-3.5 rounded-xl bg-surface-subtle border border-subtle">
+              <span class="text-[10px] text-muted uppercase block">ODOMETER (KM)</span>
+              <span id="engine-car-mileage" class="text-offwhite font-bold block mt-1 tabular-nums">2,400 km</span>
+            </div>
+            <div class="p-3.5 rounded-xl bg-surface-subtle border border-subtle">
+              <span class="text-[10px] text-muted uppercase block">POWER / OUTPUT</span>
+              <span id="engine-car-power" class="text-offwhite font-bold block mt-1 tabular-nums">177 bhp</span>
+            </div>
+            <div class="p-3.5 rounded-xl bg-surface-subtle border border-subtle">
+              <span class="text-[10px] text-muted uppercase block">DRIVETRAIN</span>
+              <span id="engine-car-drivetrain" class="text-offwhite font-bold block mt-1 truncate">4x4 Electronic
+                Lock</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Split Grid: Left Form Controls (Dates, Protection, Extras) + Right Sticky Ledger -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-start">
+
+          <!-- Left Column: Dates + Protection + Extras -->
+          <div class="lg:col-span-7 xl:col-span-7 space-y-8">
+
+            <!-- 2. Date Range Picker -->
+            <div class="p-6 sm:p-8 rounded-2xl border border-subtle bg-surface">
+              <div class="flex items-center justify-between mb-6 pb-4 border-b border-subtle">
+                <div>
+                  <span class="text-xs font-mono uppercase tracking-widest text-muted block mb-1">SCHEDULE
+                    CONFIGURATION</span>
+                  <h4 class="text-xl font-bold text-white tracking-tight">Pick-up &amp; Return Dates</h4>
+                </div>
+                <div
+                  class="px-4 py-1.5 rounded bg-white text-black font-mono font-bold text-xs tracking-wider uppercase shadow-sm">
+                  <span id="display-rental-days">3</span> <span id="display-rental-days-label">DAYS</span>
+                </div>
+              </div>
+
+              <!-- Date Inputs Grid -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                <div class="space-y-2.5">
+                  <label for="pickup-date"
+                    class="flex items-center justify-between text-xs font-mono uppercase tracking-wider text-muted">
+                    <span class="font-bold text-offwhite">Pick-Up Date</span>
+                    <span class="text-[11px] text-emerald-400 font-bold">09:00 DISPATCH</span>
+                  </label>
+                  <input type="date" id="pickup-date"
+                    class="date-input w-full px-4 py-3.5 rounded-xl border border-subtle bg-surface-subtle text-white font-mono text-sm focus:outline-none focus:border-white transition-colors"
+                    required>
+                </div>
+
+                <div class="space-y-2.5">
+                  <label for="return-date"
+                    class="flex items-center justify-between text-xs font-mono uppercase tracking-wider text-muted">
+                    <span class="font-bold text-offwhite">Return Date</span>
+                    <span class="text-[11px] text-offwhite/70 font-bold">18:00 CHECK-IN</span>
+                  </label>
+                  <input type="date" id="return-date"
+                    class="date-input w-full px-4 py-3.5 rounded-xl border border-subtle bg-surface-subtle text-white font-mono text-sm focus:outline-none focus:border-white transition-colors"
+                    required>
+                </div>
+              </div>
+
+              <!-- Quick Duration Presets -->
+              <div class="flex flex-wrap items-center gap-2.5 mt-6 pt-5 border-t border-subtle/60">
+                <span class="text-xs font-mono text-muted uppercase mr-1">Duration Presets:</span>
+                <button type="button" class="preset-pill" data-days="1">+1 Day (Sprint)</button>
+                <button type="button" class="preset-pill active" data-days="3">+3 Days (Weekend)</button>
+                <button type="button" class="preset-pill" data-days="7">+7 Days (Week)</button>
+                <button type="button" class="preset-pill" data-days="14">+14 Days (Extended)</button>
+              </div>
+
+              <!-- Operational dispatch note -->
+              <div class="mt-4 pt-3.5 border-t border-subtle/50 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs font-mono text-muted">
+                <span>Dispatch Hub: Mumbai CSMIA Terminal 1 (Valet Bay A)</span>
+                <span class="text-offwhite/80">Complimentary 2h return buffer included</span>
+              </div>
+
+              <!-- Date validation warning -->
+              <div id="date-validation-alert"
+                class="hidden mt-4 p-4 rounded-xl bg-amber-500/10 border border-amber-500/30 text-amber-200 text-xs font-mono flex items-center gap-2.5">
+                <svg class="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z">
+                  </path>
+                </svg>
+                <span id="date-validation-text">Return date must be strictly after pickup date. Minimum booking is 1
+                  day.</span>
+              </div>
+            </div>
+
+            <!-- 3. Protection & Insurance Tiers (in Rupees) -->
+            <div class="p-6 sm:p-8 rounded-2xl border border-subtle bg-surface">
+              <div class="mb-6 pb-4 border-b border-subtle">
+                <span class="text-xs font-mono uppercase tracking-widest text-muted block mb-1">RISK
+                  MITIGATION</span>
+                <h4 class="text-xl font-bold text-white tracking-tight">Tiered Protection Coverage</h4>
+                <p class="text-sm text-muted mt-1.5">Select liability shield protocol. Rates calculated per rental day.
+                </p>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-4" id="insurance-tier-group" role="radiogroup"
+                aria-label="Insurance Tiers">
+
+                <!-- Tier 1: Standard (Included ₹0) -->
+                <div class="insurance-card active" data-tier="standard" data-price="0" role="radio" aria-checked="true"
+                  tabindex="0">
+                  <div class="flex items-center justify-between mb-3">
+                    <span class="text-sm font-mono uppercase font-bold text-offwhite">Standard</span>
+                    <span class="text-xs font-mono text-muted">Included</span>
+                  </div>
+                  <div class="text-2xl font-bold font-mono text-white mb-3">₹0<span
+                      class="text-xs text-muted font-normal"> / day</span></div>
+                  <ul class="text-xs sm:text-sm text-muted space-y-2 font-sans border-t border-subtle/50 pt-3.5">
+                    <li class="flex items-center gap-2"><span class="text-white font-bold">✓</span> Third-party liability</li>
+                    <li class="flex items-center gap-2"><span class="text-white font-bold">✓</span> Standard excess</li>
+                    <li class="flex items-center gap-2 text-muted/60">✕ No wheel/tyre cover</li>
+                  </ul>
+                </div>
+
+                <!-- Tier 2: Comprehensive (+₹1,200/day) -->
+                <div class="insurance-card" data-tier="comprehensive" data-price="1200" role="radio"
+                  aria-checked="false" tabindex="0">
+                  <div class="flex items-center justify-between mb-3">
+                    <span class="text-sm font-mono uppercase font-bold text-offwhite">Comprehensive</span>
+                    <span
+                      class="px-2 py-0.5 rounded text-[10px] font-mono uppercase bg-white/10 text-white border border-white/20 font-bold">Recommended</span>
+                  </div>
+                  <div class="text-2xl font-bold font-mono text-white mb-3">+₹1,200<span
+                      class="text-xs text-muted font-normal"> / day</span></div>
+                  <ul class="text-xs sm:text-sm text-muted space-y-2 font-sans border-t border-subtle/50 pt-3.5">
+                    <li class="flex items-center gap-2"><span class="text-white font-bold">✓</span> Zero collision deductible
+                    </li>
+                    <li class="flex items-center gap-2"><span class="text-white font-bold">✓</span> 24/7 RSA Pan-India</li>
+                    <li class="flex items-center gap-2"><span class="text-white font-bold">✓</span> Theft &amp; glass shield
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- Tier 3: Elite Shield (+₹2,800/day) -->
+                <div class="insurance-card" data-tier="elite" data-price="2800" role="radio" aria-checked="false"
+                  tabindex="0">
+                  <div class="flex items-center justify-between mb-3">
+                    <span class="text-sm font-mono uppercase font-bold text-offwhite">Elite Shield</span>
+                    <span class="text-xs font-mono text-emerald-400 font-bold">VIP Spec</span>
+                  </div>
+                  <div class="text-2xl font-bold font-mono text-white mb-3">+₹2,800<span
+                      class="text-xs text-muted font-normal"> / day</span></div>
+                  <ul class="text-xs sm:text-sm text-muted space-y-2 font-sans border-t border-subtle/50 pt-3.5">
+                    <li class="flex items-center gap-2"><span class="text-white font-bold">✓</span> Absolute zero liability</li>
+                    <li class="flex items-center gap-2"><span class="text-white font-bold">✓</span> Full tyre, rim &amp;
+                      underbody</li>
+                    <li class="flex items-center gap-2"><span class="text-white font-bold">✓</span> Concierge replacement</li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- 4. Operational Add-ons (in Rupees) -->
+            <div class="p-6 sm:p-8 rounded-2xl border border-subtle bg-surface">
+              <div class="mb-6 pb-4 border-b border-subtle">
+                <span class="text-xs font-mono uppercase tracking-widest text-muted block mb-1">PER-DIEM
+                  ADDITIONS</span>
+                <h4 class="text-xl font-bold text-white tracking-tight">Pilot &amp; Kilometre Enhancements</h4>
+                <p class="text-sm text-muted mt-1.5">Configure additional pilots and mileage allowances.</p>
+              </div>
+
+              <div class="space-y-4">
+                <label
+                  class="addon-row flex items-center justify-between p-4 sm:p-5 rounded-xl border border-subtle bg-surface-subtle cursor-pointer transition-colors hover:border-white/30">
+                  <div class="flex items-center gap-4">
+                    <input type="checkbox" id="addon-driver" class="custom-checkbox" data-rate="600">
+                    <div>
+                      <span class="text-base font-semibold text-white block">Additional Registered Pilot</span>
+                      <span class="text-sm text-muted">Full insurance coverage extended to secondary authorized
+                        operator.</span>
+                    </div>
+                  </div>
+                  <span class="text-base font-mono font-bold text-offwhite whitespace-nowrap">+₹600 / day</span>
+                </label>
+
+                <label
+                  class="addon-row flex items-center justify-between p-4 sm:p-5 rounded-xl border border-subtle bg-surface-subtle cursor-pointer transition-colors hover:border-white/30">
+                  <div class="flex items-center gap-4">
+                    <input type="checkbox" id="addon-miles" class="custom-checkbox" data-rate="900">
+                    <div>
+                      <span class="text-base font-semibold text-white block">Unlimited Kilometre Allowance</span>
+                      <span class="text-sm text-muted">Bypasses standard 250 km/day daily cap for unrestricted
+                        transit.</span>
+                    </div>
+                  </div>
+                  <span class="text-base font-mono font-bold text-offwhite whitespace-nowrap">+₹900 / day</span>
+                </label>
+
+                <label
+                  class="addon-row flex items-center justify-between p-4 sm:p-5 rounded-xl border border-subtle bg-surface-subtle cursor-pointer transition-colors hover:border-white/30">
+                  <div class="flex items-center gap-4">
+                    <input type="checkbox" id="addon-carbon" class="custom-checkbox" data-flat="350">
+                    <div>
+                      <span class="text-base font-semibold text-white block">Carbon Neutral Reforestation Offset</span>
+                      <span class="text-sm text-muted">Certified Indian reforestation carbon credits for total
+                        journey.</span>
+                    </div>
+                  </div>
+                  <span class="text-base font-mono font-bold text-offwhite whitespace-nowrap">+₹350 flat</span>
+                </label>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right Column: Real-Time Price Calculation Ledger & Deployment Guarantee (Sticky) -->
+          <div class="lg:col-span-5 xl:col-span-5 sticky top-24 space-y-6">
+
+            <!-- 1. Selected Specimen Quick Digest Card -->
+            <div class="p-5 sm:p-6 rounded-2xl border border-subtle bg-surface shadow-xl">
+              <div class="flex items-center justify-between pb-3.5 border-b border-subtle mb-3.5">
+                <span class="text-xs font-mono uppercase tracking-widest text-muted">DISPATCH SPECIMEN</span>
+                <span id="ledger-car-category"
+                  class="px-2.5 py-0.5 rounded text-xs font-mono uppercase bg-white/10 text-offwhite border border-white/20 font-bold">SUV</span>
+              </div>
+              <div class="flex items-baseline justify-between gap-3">
+                <div>
+                  <span id="ledger-car-make" class="text-xs font-mono uppercase text-muted tracking-wider block">MAHINDRA</span>
+                  <h4 id="ledger-car-name" class="text-lg sm:text-xl font-extrabold text-white">Thar Roxx 4x4 (Obsidian Spec)</h4>
+                </div>
+                <div class="text-right flex-shrink-0">
+                  <span id="ledger-car-rate" class="text-2xl font-bold font-mono text-white tabular-nums">₹6,500</span>
+                  <span class="text-xs font-mono text-muted">/day</span>
+                </div>
+              </div>
+              <div class="mt-4 pt-3.5 border-t border-subtle/60 flex items-center justify-between text-xs font-mono">
+                <div class="flex items-center gap-1.5">
+                  <span class="w-2 h-2 rounded-full dot-circle bg-emerald-400"></span>
+                  <span class="text-offwhite font-medium">Terminal Curbside Ready</span>
+                </div>
+                <span id="ledger-car-schedule-summary" class="text-offwhite/80">3 Days Deployment</span>
+              </div>
+            </div>
+
+            <!-- 2. Live Invoice Breakdown Card -->
+            <div class="p-6 sm:p-8 rounded-2xl border border-subtle bg-surface shadow-2xl relative">
+              <div class="flex items-center justify-between pb-4 border-b border-subtle mb-6">
+                <div>
+                  <span class="text-xs font-mono uppercase tracking-widest text-muted block mb-0.5">LIVE INVOICE LEDGER</span>
+                  <h4 class="text-base sm:text-lg font-bold text-white tracking-tight">Financial Computation (INR)</h4>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="w-2 h-2 rounded-full dot-circle bg-emerald-400 shadow-glow" title="Live Synced"></span>
+                  <span class="text-xs font-mono text-emerald-400 font-bold uppercase">LIVE</span>
+                </div>
+              </div>
+
+              <!-- Ledger Line Items with crisp readable fonts -->
+              <div class="space-y-4 text-sm font-mono">
+                <div class="flex justify-between items-center text-muted">
+                  <span id="invoice-base-label">Base Rate (₹6,500 × 3d)</span>
+                  <span class="text-offwhite font-bold tabular-nums" id="invoice-base-total">₹19,500.00</span>
+                </div>
+
+                <div class="flex justify-between items-center text-muted">
+                  <span id="invoice-protection-label">Standard Protection (₹0 × 3d)</span>
+                  <span class="text-offwhite font-bold tabular-nums" id="invoice-protection-total">₹0.00</span>
+                </div>
+
+                <div class="flex justify-between items-center text-muted" id="invoice-addons-row">
+                  <span id="invoice-addons-label">Add-ons &amp; Extras</span>
+                  <span class="text-offwhite font-bold tabular-nums" id="invoice-addons-total">₹0.00</span>
+                </div>
+
+                <div class="flex justify-between items-center text-muted">
+                  <span class="flex items-center gap-1.5">
+                    <span>Fleet Prep &amp; Detailing Protocol</span>
+                    <span class="text-[11px] text-muted/70">(Flat)</span>
+                  </span>
+                  <span class="text-offwhite font-bold tabular-nums" id="invoice-fee-total">₹850.00</span>
+                </div>
+
+                <div class="flex justify-between items-center text-muted">
+                  <span>GST &amp; State Transport Cess (18%)</span>
+                  <span class="text-offwhite font-bold tabular-nums" id="invoice-tax-total">₹3,663.00</span>
+                </div>
+
+                <!-- Total Separator -->
+                <div class="border-t border-subtle my-5 pt-5">
+                  <div class="flex justify-between items-baseline">
+                    <div>
+                      <span class="text-xs uppercase font-mono tracking-widest text-muted block mb-0.5">Net Total Due</span>
+                      <span class="text-xs text-muted/80 font-sans">Zero hidden delivery penalties</span>
+                    </div>
+                    <div class="text-right">
+                      <div class="text-3xl sm:text-4xl font-extrabold text-white font-mono tracking-tight tabular-nums"
+                        id="invoice-grand-total">
+                        ₹24,013.00
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Security Deposit Hold Note -->
+                <div
+                  class="p-4 rounded-xl bg-surface-subtle border border-subtle text-xs text-muted font-sans flex items-start gap-2.5 leading-relaxed">
+                  <svg class="w-4 h-4 text-white/60 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor"
+                    viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                      d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                  <span>A refundable authorization hold of <strong class="text-offwhite">₹10,000</strong> is placed upon
+                    vehicle dispatch and released immediately post return inspection.</span>
+                </div>
+              </div>
+
+              <!-- Proceed to Confirmation View Button -->
+              <button id="reserve-btn"
+                class="w-full mt-6 py-4 sm:py-5 px-6 sm:px-8 rounded bg-white text-black font-extrabold text-sm sm:text-base uppercase tracking-widest hover:bg-offwhite hover:shadow-glow-strong active:scale-[0.98] transition-all duration-200 flex items-center justify-center gap-3 cursor-pointer border-0">
+                <span>Lock Reservation &amp; View Voucher</span>
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3">
+                  </path>
+                </svg>
+              </button>
+
+              <div class="mt-3.5 text-center">
+                <span class="text-xs font-mono uppercase text-muted/70 tracking-wider">
+                  Instant Lock • 100% Refundable Up to 24h Prior
+                </span>
+              </div>
+            </div>
+
+            <!-- 3. Pre-Flight Inspection & Deployment Guarantee Card -->
+            <div class="p-5 sm:p-6 rounded-2xl border border-subtle bg-surface shadow-xl space-y-4">
+              <div class="flex items-center justify-between pb-3 border-b border-subtle">
+                <span class="text-xs font-mono uppercase tracking-widest text-offwhite font-bold">DEPLOYMENT GUARANTEE</span>
+                <span class="text-xs font-mono text-emerald-400 flex items-center gap-1.5 font-bold">
+                  <span class="w-2 h-2 rounded-full dot-circle bg-emerald-400"></span>
+                  AUDITED
+                </span>
+              </div>
+              
+              <div class="space-y-3 font-mono text-xs">
+                <div class="flex items-start gap-3">
+                  <span class="text-emerald-400 font-bold text-sm">01</span>
+                  <div>
+                    <span class="text-white font-bold block">120-Point Multi-Stage Inspection</span>
+                    <span class="text-muted font-sans text-xs">Powertrain, brake pads, tyre treads, and diagnostics verified pre-dispatch.</span>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-3">
+                  <span class="text-emerald-400 font-bold text-sm">02</span>
+                  <div>
+                    <span class="text-white font-bold block">Curbside Handover &lt; 90 Seconds</span>
+                    <span class="text-muted font-sans text-xs">Contactless key card or digital NFC pilot credential at terminal bay.</span>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-3">
+                  <span class="text-emerald-400 font-bold text-sm">03</span>
+                  <div>
+                    <span class="text-white font-bold block">100% Fuel / 100% Charge Guarantee</span>
+                    <span class="text-muted font-sans text-xs">Delivered topped off. Return with same level. Zero fuel surcharge markup.</span>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-3">
+                  <span class="text-emerald-400 font-bold text-sm">04</span>
+                  <div>
+                    <span class="text-white font-bold block">NHAI Fastag Highway Pass Pre-Loaded</span>
+                    <span class="text-muted font-sans text-xs">Frictionless automated toll deduction across all national highways.</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Dedicated Concierge Line -->
+              <div class="pt-3 border-t border-subtle flex items-center justify-between text-xs font-mono">
+                <span class="text-muted">24/7 Terminal Dispatch:</span>
+                <a href="tel:+918005550199" class="text-white font-bold hover:underline">+91 800-555-0199 ↗</a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ==========================================================================
+         PAGE 3: DEDICATED FINAL BOOKING CONFIRMATION & VOUCHER PAGE
+         Luxury Boarding Pass / Dispatch Ticket Aesthetic
+         ========================================================================== -->
+    <div id="view-confirmation" class="app-view hidden">
+      <div class="max-w-5xl mx-auto px-5 sm:px-8 py-10 sm:py-16">
+
+        <!-- Breadcrumb / Back Bar -->
+        <div class="flex items-center justify-between pb-6 border-b border-subtle mb-10">
+          <button type="button"
+            class="back-to-config-btn inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-muted hover:text-white transition-colors bg-transparent border-0 cursor-pointer">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18">
+              </path>
+            </svg>
+            <span>Modify Configuration</span>
+          </button>
+
+          <div class="flex items-center gap-2 font-mono text-xs text-emerald-400 font-bold">
+            <span class="w-2 h-2 rounded-full dot-circle bg-emerald-400 animate-pulse"></span>
+            <span>VOUCHER ACTIVE // DISPATCH LOCKED</span>
+          </div>
+        </div>
+
+        <!-- Success Header -->
+        <div class="text-center pb-8">
+          <div class="success-check-circle animate-bounce-subtle">
+            <svg class="w-7 h-7 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path>
+            </svg>
+          </div>
+          <span class="text-xs font-mono uppercase tracking-widest text-emerald-400 block mb-1.5 font-bold">OFFICIAL DISPATCH
+            PROTOCOL VERIFIED</span>
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight">Vehicular Voucher Issued</h2>
+
+          <div
+            class="inline-flex items-center gap-3 px-5 py-2.5 rounded bg-surface border border-subtle font-mono text-xs mt-4 shadow-lg">
+            <span class="text-muted">Booking Reference:</span>
+            <span id="confirmation-ref-id" class="text-white font-extrabold text-sm tracking-wider select-all">MNM-IND-8492-X</span>
+            <button type="button" id="copy-ref-btn"
+              class="p-1 hover:text-white text-muted transition-colors bg-transparent border-0 cursor-pointer"
+              title="Copy Reference Token">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                  d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z">
+                </path>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- PHYSICAL LUXURY BOARDING PASS / DISPATCH VOUCHER TICKET (Printable) -->
+        <div id="printable-receipt"
+          class="boarding-pass-ticket my-8 relative rounded-3xl border border-white/20 bg-surface text-offwhite overflow-hidden shadow-2xl">
+
+          <!-- Ticket Header Band -->
+          <div
+            class="p-6 sm:p-8 bg-surface-elevated border-b border-subtle flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+            <div>
+              <div class="flex items-center gap-2 font-mono text-xs text-muted uppercase tracking-widest mb-1.5">
+                <span class="text-white font-bold">MONOMOTIV COLLECTIVE</span>
+                <span>•</span>
+                <span>BHARAT DISPATCH PASS</span>
+              </div>
+              <h3 id="receipt-car-name" class="text-2xl sm:text-3xl font-extrabold text-white">Mahindra Thar Roxx 4x4 (Obsidian Spec)</h3>
+              <span id="receipt-car-specs" class="text-xs font-mono text-muted uppercase block mt-1">
+                OBSIDIAN MATTE • 2,400 KM • 177 BHP
+              </span>
+            </div>
+
+            <!-- Terminal Badge & Verification Seal -->
+            <div class="flex flex-col sm:items-end gap-2 self-stretch sm:self-auto">
+              <div class="p-3.5 rounded-xl bg-surface border border-subtle font-mono text-left sm:text-right">
+                <span class="text-[10px] text-muted uppercase block">DISPATCH TERMINAL</span>
+                <span class="text-xs font-bold text-white block">MUMBAI (CSMIA) // HANGAR 01</span>
+                <span class="text-[11px] text-emerald-400 font-bold block mt-0.5">CURBSIDE READY</span>
+              </div>
+              <span class="ticket-seal-badge self-start sm:self-auto">
+                <span class="w-1.5 h-1.5 rounded-full dot-circle bg-emerald-400"></span>
+                OFFICIAL ISSUANCE
+              </span>
+            </div>
+          </div>
+
+          <!-- Dual-Zone Body Layout: Left Zone (Itinerary & Protocol) + Right Zone (Stub & Financial Audit) -->
+          <div class="grid grid-cols-1 lg:grid-cols-12">
+
+            <!-- Zone 1: Main Flight/Transit Itinerary & Telemetry (60% width) -->
+            <div class="lg:col-span-7 p-6 sm:p-8 space-y-6 font-mono text-xs">
+
+              <!-- Itinerary Grid -->
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-5 pb-6 border-b border-subtle">
+                <div>
+                  <span class="text-xs text-muted uppercase block mb-1">PICK-UP DATE &amp; TIME</span>
+                  <span id="receipt-pickup" class="text-base font-bold text-white block">2026-10-07</span>
+                  <span class="text-xs text-offwhite/70">09:00 IST (Terminal 1)</span>
+                </div>
+
+                <div>
+                  <span class="text-xs text-muted uppercase block mb-1">RETURN DATE &amp; TIME</span>
+                  <span id="receipt-return" class="text-base font-bold text-white block">2026-10-10</span>
+                  <span class="text-xs text-offwhite/70">18:00 IST (Terminal 1)</span>
+                </div>
+
+                <div>
+                  <span class="text-xs text-muted uppercase block mb-1">DEPLOYMENT DURATION</span>
+                  <span id="receipt-days" class="text-base font-bold text-white block">3 Days</span>
+                  <span class="text-xs text-emerald-400 font-semibold">2h Buffer Included</span>
+                </div>
+              </div>
+
+              <!-- Coverage & Addons Breakdown -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 pb-6 border-b border-subtle">
+                <div>
+                  <span class="text-xs text-muted uppercase block mb-1">PROTECTION PROTOCOL</span>
+                  <span id="receipt-protection" class="text-sm font-bold text-offwhite block">Standard Protection (Included)</span>
+                  <span class="text-xs text-muted font-sans mt-0.5 block">Comprehensive third-party liability shield</span>
+                </div>
+
+                <div>
+                  <span class="text-xs text-muted uppercase block mb-1">OPERATIONAL EXTRAS</span>
+                  <span id="receipt-addons" class="text-sm font-bold text-offwhite block">None Selected</span>
+                  <span class="text-xs text-muted font-sans mt-0.5 block">Standard 250 km/day daily allowance applies</span>
+                </div>
+              </div>
+
+              <!-- Registered Pilot Credentials & Security Authorization -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 pb-6 border-b border-subtle">
+                <div>
+                  <span class="text-xs text-muted uppercase block mb-1">AUTHORIZED LEAD PILOT</span>
+                  <span class="text-sm font-bold text-white block">Primary Operator Verified</span>
+                  <span class="text-xs text-emerald-400 font-sans mt-0.5 block">Biometric / License Cleared</span>
+                </div>
+
+                <div>
+                  <span class="text-xs text-muted uppercase block mb-1">REFUNDABLE SECURITY HOLD</span>
+                  <span class="text-sm font-bold text-offwhite block">₹10,000.00 Authorization</span>
+                  <span class="text-xs text-muted font-sans mt-0.5 block">Pre-authorized on dispatch • Auto-released</span>
+                </div>
+              </div>
+
+              <!-- Terminal Handover Protocol Directives -->
+              <div class="p-4 rounded-xl bg-surface-subtle border border-subtle font-sans text-xs text-muted leading-relaxed">
+                <span class="font-mono text-offwhite font-bold block mb-1">CURBSIDE HANDOVER DIRECTIVE:</span>
+                Present this official digital dispatch pass or booking token at <strong class="text-offwhite">Mumbai CSMIA Terminal 1 Valet Bay A</strong>. Key card released instantly via biometric validation. Delivered with 100% fuel/charge and pre-loaded Fastag.
+              </div>
+
+            </div>
+
+            <!-- Zone 2: Perforated Tear-off Stub & Itemized Financial Audit (40% width) -->
+            <div class="lg:col-span-5 ticket-perforated-vertical p-6 sm:p-8 bg-surface-subtle/50 flex flex-col justify-between space-y-6 relative font-mono text-xs">
+
+              <!-- Top & Bottom Perforation Notches on Desktop -->
+              <div class="ticket-notch-top hidden lg:block"></div>
+              <div class="ticket-notch-bottom hidden lg:block"></div>
+
+              <div>
+                <!-- Stub Header -->
+                <div class="flex items-center justify-between pb-3 border-b border-subtle mb-4">
+                  <div>
+                    <span class="text-[10px] uppercase tracking-widest text-muted block">AUDIT TOKEN // STUB</span>
+                    <span id="receipt-token-stub" class="text-base font-bold text-white tracking-wider select-all">MNM-IND-8492-X</span>
+                  </div>
+                  <span class="text-[10px] text-emerald-400 font-bold uppercase">PAID &amp; LOCKED</span>
+                </div>
+
+                <!-- Financial Ledger Breakdown in INR -->
+                <div class="space-y-3 pt-1">
+                  <div class="flex justify-between text-muted text-xs">
+                    <span>Base Rate Subtotal:</span>
+                    <span id="receipt-base-amount" class="text-offwhite font-bold tabular-nums">₹19,500.00</span>
+                  </div>
+                  <div class="flex justify-between text-muted text-xs">
+                    <span>Prep &amp; Detailing Protocol:</span>
+                    <span class="text-offwhite font-bold tabular-nums">₹850.00</span>
+                  </div>
+                  <div class="flex justify-between text-muted text-xs">
+                    <span>GST &amp; Transport Cess (18%):</span>
+                    <span id="receipt-tax-amount" class="text-offwhite font-bold tabular-nums">₹3,663.00</span>
+                  </div>
+
+                  <!-- Total Amount Paid -->
+                  <div class="flex justify-between items-baseline pt-4 border-t border-subtle">
+                    <div>
+                      <span class="text-xs uppercase tracking-wider text-white font-bold block">Total Paid (INR):</span>
+                      <span class="text-[10px] text-muted font-sans">Full settlement verified</span>
+                    </div>
+                    <div class="text-right">
+                      <span id="receipt-grand-total"
+                        class="text-2xl sm:text-3xl font-extrabold text-white font-mono tabular-nums">₹24,013.00</span>
+                    </div>
+                  </div>
+
+                  <div class="flex justify-between text-[11px] text-muted pt-2 border-t border-subtle/40">
+                    <span>Refundable Security Deposit:</span>
+                    <span class="text-offwhite font-bold">₹10,000.00 (Hold)</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Barcode & Concierge Handover Footer -->
+              <div class="pt-4 border-t border-subtle space-y-3">
+                <div
+                  class="barcode-graphic w-full h-12 flex items-center justify-between px-2 bg-black/50 rounded border border-white/10"
+                  aria-hidden="true">
+                  <div class="barcode-lines"></div>
+                </div>
+
+                <div class="flex items-center justify-between text-[10px] text-muted">
+                  <span>SHA-256 ENCRYPTED</span>
+                  <span>DOCS: DL + AADHAAR</span>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- 3 Terminal Dispatch Guidance Tiles (Eliminates bottom empty void) -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5 my-8 font-mono text-xs">
+          <div class="p-5 rounded-2xl border border-subtle bg-surface shadow-lg space-y-2">
+            <div class="flex items-center gap-2 text-white font-bold">
+              <span class="w-2 h-2 rounded-full dot-circle bg-emerald-400"></span>
+              <span class="uppercase tracking-wider">01 // Curbside Handover</span>
+            </div>
+            <p class="text-muted font-sans leading-relaxed text-xs">
+              Priority lane pickup at CSMIA Terminal 1 Valet Bay A. Key handover completed in under 90 seconds with contactless digital NFC tap.
+            </p>
+          </div>
+
+          <div class="p-5 rounded-2xl border border-subtle bg-surface shadow-lg space-y-2">
+            <div class="flex items-center gap-2 text-white font-bold">
+              <span class="w-2 h-2 rounded-full dot-circle bg-emerald-400"></span>
+              <span class="uppercase tracking-wider">02 // 100% Fuel &amp; Fastag</span>
+            </div>
+            <p class="text-muted font-sans leading-relaxed text-xs">
+              Delivered with 100% full fuel tank or 100% battery charge. NHAI Fastag pre-loaded for seamless express transit across Indian national highways.
+            </p>
+          </div>
+
+          <div class="p-5 rounded-2xl border border-subtle bg-surface shadow-lg space-y-2">
+            <div class="flex items-center gap-2 text-white font-bold">
+              <span class="w-2 h-2 rounded-full dot-circle bg-emerald-400"></span>
+              <span class="uppercase tracking-wider">03 // 24/7 Pan-India RSA</span>
+            </div>
+            <p class="text-muted font-sans leading-relaxed text-xs">
+              Continuous roadside coverage nationwide. Concierge emergency line: <strong class="text-white">+91 800-555-0199</strong> with guaranteed specimen replacement.
+            </p>
+          </div>
+        </div>
+
+        <!-- Action Control: Single Print Button -->
+        <div class="flex justify-center pt-6 pb-2">
+          <button type="button" id="modal-print-btn"
+            class="px-10 py-3.5 rounded bg-white text-black font-extrabold text-sm font-mono uppercase tracking-widest hover:bg-offwhite active:scale-95 transition-all flex items-center justify-center gap-2.5 cursor-pointer border-0 shadow-lg">
+            <svg class="w-4 h-4 text-black flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z">
+              </path>
+            </svg>
+            <span>Print</span>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ==========================================================================
+         PAGE 4: DEDICATED LOGIN / PILOT ACCESS PAGE
+         Dark Minimalist Monochromatic Terminal Gateway
+         ========================================================================== -->
+    <div id="view-login" class="app-view hidden">
+      <div class="min-h-[85vh] flex flex-col justify-center items-center px-4 py-12 relative max-w-5xl mx-auto">
+
+        <!-- Top Centered Brand Typography: "monomotiv" in the center up -->
+        <div class="text-center mb-10">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded bg-surface border border-subtle text-[11px] font-mono text-muted uppercase tracking-wider mb-4 shadow-sm">
+            <span class="w-1.5 h-1.5 rounded-full dot-circle bg-emerald-400"></span>
+            <span>TERMINAL SECURITY GATEWAY // AUTH-01</span>
+          </div>
+
+          <h1 class="text-5xl sm:text-6xl lg:text-7xl font-extrabold text-white tracking-tight lowercase font-sans select-none my-1">
+            monomotiv
+          </h1>
+
+          <p class="text-xs sm:text-sm font-mono text-muted uppercase tracking-widest mt-2">
+            Obsidian Pilot Credentials &amp; Telemetry Gateway
+          </p>
+        </div>
+
+        <!-- Center Login Section Card: Directly below the brand name -->
+        <div class="login-card w-full max-w-md rounded-2xl p-6 sm:p-8 relative">
+
+          <!-- Architectural corner tick accents -->
+          <div class="absolute -top-1 -left-1 w-3 h-3 border-t-2 border-l-2 border-white/50"></div>
+          <div class="absolute -top-1 -right-1 w-3 h-3 border-t-2 border-r-2 border-white/50"></div>
+          <div class="absolute -bottom-1 -left-1 w-3 h-3 border-b-2 border-l-2 border-white/50"></div>
+          <div class="absolute -bottom-1 -right-1 w-3 h-3 border-b-2 border-r-2 border-white/50"></div>
+
+          <!-- Auth Mode Tabs -->
+          <div class="flex border-b border-subtle mb-6">
+            <button type="button" id="tab-login" class="login-tab-btn active">Pilot Sign In</button>
+            <button type="button" id="tab-register" class="login-tab-btn">Enroll New Pilot</button>
+          </div>
+
+          <!-- Form Alert / Notice -->
+          <div id="auth-alert" class="hidden mb-4 p-3 rounded text-xs font-mono border"></div>
+
+          <!-- Login Form -->
+          <form id="pilot-auth-form" class="space-y-4">
+            <div>
+              <label for="auth-email" class="text-[11px] font-mono text-muted uppercase tracking-wider block mb-1.5">
+                Pilot Identifier / Email
+              </label>
+              <input type="email" id="auth-email" required placeholder="pilot@monomotiv.in" autocomplete="email" class="login-input">
+            </div>
+
+            <div>
+              <div class="flex items-center justify-between mb-1.5">
+                <label for="auth-password" class="text-[11px] font-mono text-muted uppercase tracking-wider block">
+                  Security Passkey
+                </label>
+                <button type="button" id="toggle-passkey-visibility" class="text-[10px] font-mono text-muted hover:text-white uppercase transition-colors bg-transparent border-0 cursor-pointer">
+                  Show
+                </button>
+              </div>
+              <input type="password" id="auth-password" required placeholder="••••••••••••" autocomplete="current-password" class="login-input">
+            </div>
+
+            <!-- Optional Legal Name for Enrollment -->
+            <div id="enrollment-name-group" class="hidden">
+              <label for="auth-name" class="text-[11px] font-mono text-muted uppercase tracking-wider block mb-1.5">
+                Pilot Legal Call-Sign / Name
+              </label>
+              <input type="text" id="auth-name" placeholder="Primary Operator" class="login-input">
+            </div>
+
+            <!-- Session Persistence -->
+            <div class="flex items-center justify-between pt-1 font-mono text-xs">
+              <label class="flex items-center gap-2 cursor-pointer text-muted select-none hover:text-offwhite">
+                <input type="checkbox" id="auth-persist" checked class="custom-checkbox">
+                <span>Persist Terminal Session</span>
+              </label>
+              <button type="button" id="auth-forgot-btn" class="text-muted hover:text-white transition-colors bg-transparent border-0 cursor-pointer text-[11px]">
+                Reset Passkey
+              </button>
+            </div>
+
+            <!-- Submit CTA Button -->
+            <div class="pt-3">
+              <button type="submit" id="auth-submit-btn" class="w-full h-12 rounded bg-white text-black font-extrabold text-xs font-mono uppercase tracking-widest hover:bg-offwhite active:scale-[0.98] transition-all flex items-center justify-center gap-2 cursor-pointer border-0 shadow-lg">
+                <span id="auth-submit-text">Authorize Terminal Access</span>
+                <svg class="w-4 h-4 text-black flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                </svg>
+              </button>
+            </div>
+          </form>
+
+          <!-- Security Encryption Directive -->
+          <div class="mt-6 pt-4 border-t border-subtle flex items-center justify-between text-[10px] font-mono text-muted">
+            <div class="flex items-center gap-1.5">
+              <span class="w-1.5 h-1.5 rounded-full dot-circle bg-emerald-400"></span>
+              <span>SHA-256 SECURED</span>
+            </div>
+            <span>TLS 1.3 // ISO-27001</span>
+          </div>
+
+        </div>
+
+        <!-- Navigation Link below Card: Return to Fleet -->
+        <div class="mt-8 text-center">
+          <button type="button" class="back-to-fleet-btn inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-muted hover:text-white transition-colors bg-transparent border-0 cursor-pointer">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+            </svg>
+            <span>Return to Fleet Showcase</span>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+
+  <!-- ==========================================================================
+       VEHICLE SPEC INSPECTION MODAL (Blueprint View)
+       ========================================================================== -->
+  <div id="spec-modal"
+    class="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-black/85 backdrop-blur-md opacity-0 pointer-events-none transition-opacity duration-300"
+    role="dialog" aria-modal="true" aria-labelledby="spec-modal-title">
+    <div
+      class="relative w-full max-w-2xl max-h-[90vh] overflow-y-auto rounded-3xl border border-subtle bg-surface p-6 sm:p-8 shadow-2xl text-offwhite transform scale-95 transition-transform duration-300"
+      id="spec-modal-panel">
+
+      <button id="spec-modal-close"
+        class="absolute top-6 right-6 p-2 rounded border border-subtle hover:border-white text-muted hover:text-white transition-colors cursor-pointer bg-transparent"
+        aria-label="Close modal">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+
+      <div class="flex items-center gap-2 mb-2 font-mono text-xs">
+        <span id="spec-modal-badge"
+          class="px-2.5 py-0.5 rounded text-[10px] uppercase tracking-wider bg-surface-subtle border border-subtle text-offwhite font-bold">SUV</span>
+        <span class="text-muted">CHASSIS BLUEPRINT DATA</span>
+      </div>
+
+      <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2 mb-4">
+        <div>
+          <span id="spec-modal-make"
+            class="text-xs font-mono uppercase text-muted tracking-widest block">MAHINDRA</span>
+          <h3 id="spec-modal-title" class="text-2xl sm:text-3xl font-extrabold text-white">Thar Roxx 4x4</h3>
+        </div>
+        <div class="text-left sm:text-right">
+          <span id="spec-modal-rate" class="text-2xl font-mono font-bold text-white tabular-nums">₹6,500</span>
+          <span class="text-xs text-muted font-mono"> / day</span>
+        </div>
+      </div>
+
+      <!-- Telemetry Banner Strip -->
+      <div
+        class="p-4 rounded-2xl bg-surface-subtle border border-subtle mb-6 grid grid-cols-2 sm:grid-cols-4 gap-4 font-mono text-xs">
+        <div>
+          <span class="text-[10px] text-muted uppercase block">CHASSIS COLOUR</span>
+          <div class="flex items-center gap-1.5 mt-1">
+            <span id="spec-modal-swatch" class="w-3 h-3 rounded-full dot-circle dot-circle border border-white/20"></span>
+            <span id="spec-modal-colour" class="text-offwhite font-bold">Obsidian Matte</span>
+          </div>
+        </div>
+        <div>
+          <span class="text-[10px] text-muted uppercase block">ODOMETER</span>
+          <span id="spec-modal-mileage" class="text-offwhite font-bold mt-1 block">2,400 KM</span>
+        </div>
+        <div>
+          <span class="text-[10px] text-muted uppercase block">INCLUDED RUN</span>
+          <span id="spec-modal-allowance" class="text-offwhite font-bold mt-1 block">250 KM / DAY</span>
+        </div>
+        <div>
+          <span class="text-[10px] text-muted uppercase block">DISPATCH STATUS</span>
+          <span class="text-emerald-400 font-bold mt-1 block">READY (HANGAR 01)</span>
+        </div>
+      </div>
+
+      <p id="spec-modal-desc" class="text-sm text-muted leading-relaxed mb-6 font-sans">
+        Raw off-road engineering with electronic locking differentials, penta-link suspension, and turbocharged
+        mStallion torque delivery.
+      </p>
+
+      <!-- Technical Specifications Blueprint Grid -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 font-mono text-xs mb-8" id="spec-modal-grid">
+        <!-- Rendered dynamically -->
+      </div>
+
+      <div class="flex gap-4">
+        <button id="spec-modal-proceed-btn"
+          class="flex-1 py-3.5 px-6 rounded bg-white text-black font-bold text-xs uppercase tracking-widest hover:bg-offwhite transition-all cursor-pointer border-0">
+          Proceed with This Specimen →
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Toast Notification Stack -->
+  <div id="toast-container" class="fixed bottom-6 left-6 z-50 pointer-events-none flex flex-col gap-2"
+    aria-live="polite"></div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
